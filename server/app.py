@@ -46,7 +46,7 @@ def predict_monkeypox(image_path):
     image_array = image_array.reshape(1, 224, 224, 3)
     prediction = monkeyModel.predict(image_array)
     predicted_class_index = np.argmax(prediction)
-    m_labels = ['MonkeyPox', 'Others']
+    m_labels = ['MonkeyPox', 'No MonkeyPox']
     return m_labels[predicted_class_index]
 
 @app.route('/api/predictDiabetes', methods=['POST'])

@@ -8,7 +8,7 @@ const ChatbotHeart = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://127.0.0.1:5000/api/heartChatbot', { question }, {
+      const res = await axios.post('http://127.0.0.1:5174/api/heartChatbot', { question }, {
         headers: {
           'Content-Type': 'application/json',
         },

@@ -82,7 +82,7 @@ def load_model_chatbot_heart():
             embedding=embeddings
         )
 
-        print("Model and vector store successfully loaded.")
+        print("Model and vector store successfully loaded h.")
         return (vector_store, prompt)  # Adjust return value as needed
     except Exception as e:
         print(f"Error loading model: {e}")
@@ -115,7 +115,7 @@ def load_model_chatbot_monkey():
             embedding=embeddings
         )
 
-        print("Model and vector store successfully loaded.")
+        print("Model and vector store successfully loaded m.")
         return (vector_store, prompt)  # Adjust return value as needed
     except Exception as e:
         print(f"Error loading model: {e}")
